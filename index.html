@@ -86,7 +86,7 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ml-auto">
                                     <li class="nav-item active">
-                                        <a class="page-scroll" href="#home">Inicio</a>
+                                        <a class="page-scroll" href="#banner">Inicio</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#features">Servicios</a>
@@ -111,7 +111,7 @@
         
         <div id="home" class="header-hero bg_cover" style="background-image: url(assets/images/banner-bg.svg)">
             <div class="container">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center" id="banner">
                     <div class="col-lg-8">
                         <div class="header-hero-content text-center">
                             <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Bienvenidos a <span>Piscinas Malen</span></h3>
@@ -125,7 +125,7 @@
                     <div class="col-md-10">
                         <div class="header-hero-image text-center wow fadeIn" data-wow-duration="1.3s" data-wow-delay="1.4s">
                             <!-----Centrar form-->
-                           <form action="./assets/js/forms.php" class="myform" id="cotizacion">
+                           <form action="forms.php" method="POST" class="myform" id="cotizacion" accept-charset="UTF-8">
                             <div class="row">
                                 <div class="col">
                                   <input type="text" class="form-control" placeholder="Tu nombre" name="name" required>
@@ -136,7 +136,7 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <input type="text" class="form-control" name="phone" placeholder="Teléfono / Whatsapp" name="telefono" required>
+                                    <input type="text" class="form-control" name="phone" placeholder="Teléfono / Whatsapp" required>
                                   </div>
                                   <div class="col">
                                     <input type="text" class="form-control" placeholder="Ciudad" name="ciudad">
@@ -145,14 +145,14 @@
                                 <div class="col">
                                     <select class="form-select" name="servicios">
                                         <option selected>¿Qué servicio te interesa?</option>
-                                        <option value="piscina">Construcción de piscina de hormigón</option>
-                                        <option value="mantenimiento">Mantenimiento de piscina</option>
-                                        <option value="piscina2">Reparar una piscina ya construida</option>
-                                        <option value="deco1">Construir un deck o solarium</option>
-                                        <option value="pergolas">Hacer una pérgola</option>
-                                        <option value="luces">Instalar luces led</option>
-                                        <option value="bomba">Colocar / reparar bombas de filtro</option>
-                                        <option value="otros">Otros trabajos</option>
+                                        <option value="Construcción de piscina">Construcción de piscina de hormigón</option>
+                                        <option value="Mantenimiento de Piscina">Mantenimiento de piscina</option>
+                                        <option value="Repara una piscina">Reparar una piscina ya construida</option>
+                                        <option value="Construir un deck o solarium">Construir un deck o solarium</option>
+                                        <option value="Hacer una pérgola">Hacer una pérgola</option>
+                                        <option value="Instalar luces led">Instalar luces led</option>
+                                        <option value="Colocar / reparar bombas de filtro">Colocar / reparar bombas de filtro</option>
+                                        <option value="Otros trabajos">Otros trabajos</option>
                                     </select>
                             </div>
 
@@ -488,9 +488,9 @@
                         <div class="form-mensaje mt-50">
                             <form action="#">
                                 <div class="form-group">
-                                <input type="name" class="form-control" name="name" placeholder="¿Como te llamas?" autocomplete="name">
+                                <input type="name" class="form-control" name="nombre" placeholder="¿Como te llamas?" autocomplete="name">
                                 <input type="text" class="form-control" name="numero" placeholder="Ingresa tu celular" autocomplete="tel">
-                                <input type="text" class="form-control" placeholder="Ingresa tu email" autocomplete="email">
+                                <input type="text" class="form-control" name="correo" eplaceholder="Ingresa tu email" autocomplete="email">
                                 <textarea class="form-control" placeholder="Escribe un mensaje"></textarea>
                                 <button type="submit" class="main-btn">Enviar</button>
                                 </div>
