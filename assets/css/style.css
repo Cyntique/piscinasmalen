@@ -1087,11 +1087,6 @@ p {
       border-radius: 60px;
       top: 0;
       left: 0;
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      transform: rotate(-45deg);
       z-index: -1; }
       @media (max-width: 767px) {
         .counter-wrapper .single-counter::before {
